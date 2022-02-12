@@ -70,5 +70,6 @@ coverage/
 .umi-production
 .env.local
 dist/
+site/
 
 .yalc

@@ -5,6 +5,7 @@
   ],
   "scripts": {
     "build": "lerna run build",
+    "build:site": "yarn run build && lerna run build_site --scope=react-turn",
     "bootstrap": "lerna bootstrap",
     "commit": "git cz",
     "test": "jest",

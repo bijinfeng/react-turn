@@ -21,13 +21,15 @@
     "build_esm": "swc -C module.type=es6 -d dist/esm src/",
     "build_cjs": "swc -C module.type=commonjs -d dist/cjs src/",
     "esm_hack": "node ../../scripts/esmify.mjs",
-    "build": "run-s build_types build_esm build_cjs esm_hack"
-  },
-  "dependencies": {
+    "build": "run-s build_types build_esm build_cjs esm_hack",
+    "site": "dumi dev",
+    "build_site": "dumi build"
   },
   "devDependencies": {
     "@swc/cli": "^0.1.55",
     "@swc/core": "^1.2.136",
+    "@types/react": "^17.0.39",
+    "dumi": "^1.1.38",
     "npm-run-all": "^4.1.5",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
